@@ -2,19 +2,26 @@
 Rice is a library of web components.
 
 ## Structure
-Rice is organized in three main folders: 
-* bases/
-* blocks/
-* elements/
+Rice is organized in three main __rice fields__: 
+```
+rice/
+└─ bases
+└─ blocks
+└─ elements
+```
+Ecach of these three rice fields contain __grains__.  
+A grain is a single module. Each grain is organise as follow: 
 
-Ecach of these three folders contains folders of the single modules. In each single folder contains folders of the modules. 
-Each module is organise as follow: 
-+ foobar/
-  + foobar.sketch
-  + foobar.html
-  + foobar.sass
-  + foobar.js
-  
+```
+foobar/
+└─ foobar.sketch
+└─ foobar.html
+└─ foobar.sass
+└─ foobar.js
+```
+### Rice fileds 
+Rice fields have reach the global layout at different depths.
+* 
 
 ## Contacts
 ### Author
