@@ -35,18 +35,25 @@ Include single elements of the page like `button`, `a`, `code` etc... Those grai
 The repo provide a `gulpfile` and include the npm module  `http-server`.
 ### HTTP server 
 Run   
-`$ npm install`   
+```
+$ npm install
+```
 then 
-`$ http-server start` 
+```
+$ http-server start
+```
 
 ### Gulpfile
 #### SASS compiling 
 Run   
-`$ gulp sass`   
+```
+$ gulp sass
+```
 for a single compile of every `*.sass`; or   
-`$ gulp sass:watch`
-to watch and compile `*.sass` on the fly
-
+```
+$ gulp sass:watch
+```
+to watch and compile `*.sass` on the fly.
 
 ## Contacts
 ### Author
