@@ -31,6 +31,23 @@ Include grains that build the base of the layout of the page. Those parts uses _
 #### Elements
 Include single elements of the page like `button`, `a`, `code` etc... Those grains are structired as sass __mixin__ so to made really easy to import them in dofferent projects.
 
+##Usage 
+The repo provide a `gulpfile` and include the npm module  `http-server`.
+### HTTP server 
+Run   
+`$ npm install`   
+then 
+`$ http-server start` 
+
+### Gulpfile
+#### SASS compiling 
+Run   
+`$ gulp sass`   
+for a single compile of every `*.sass`; or   
+`$ gulp sass:watch`
+to watch and compile `*.sass` on the fly
+
+
 ## Contacts
 ### Author
 Nicola Bertelloni
