@@ -2,7 +2,7 @@
 Rice is a library of web components.
 
 ## Structure
-Rice is organized in three main **rice fields**: 
+Rice is organized in three main **rice fields**:
 ```
 rice/
 └─ bases
@@ -27,32 +27,29 @@ Include grains that build the base of the layout of the page. Those parts uses *
 #### Elements
 Include single elements of the page like `button`, `a`, `code` etc... Those grains are structired as sass **mixin** so to made really easy to import them in dofferent projects.
 
-##Usage 
+##Usage
 The repo provide a `gulpfile` and include the npm module  `http-server`.
-### HTTP server 
+### HTTP server
 Run   
 ```
-$ npm install
+npm install
 ```
-then 
+then
 ```
-$ http-server start
+http-server start
 ```
 
 ### Gulpfile
-#### SASS compiling 
+#### SASS compiling
 Run   
 ```
-$ gulp sass
+gulp sass
 ```
 for a single compile of every `*.sass`; or   
 ```
-$ gulp sass:watch
+gulp sass:watch
 ```
 to watch and compile `*.sass` on the fly.
 
-## Contacts
-### Author
-Nicola Bertelloni
-### Mail
-[nicola.bertelloni@gmail.com](mailto:nicola.bertelloni@gmail.com)
+## Aknowledgements
+**Rice** is a project developed with <3 by [Nicola Bertelloni](mailto:nicola.bertelloni@gmail.com)
