@@ -2,24 +2,49 @@
   "name": "rice",
   "version": "1.0.0",
   "description": "Rice is a library of web components. ",
-  "main": "index.html",
+  "main": "README.md",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "browser-sync start --config bs-config.js",
+    "server:tunnel": "browser-sync start --config bs-config.js --tunnel"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wanbinkimoon/rice.git"
   },
-  "author": "nicola bertelloni",
+  "author": {
+    "name": "Nicola Bertelloni",
+    "email": "nicola.bertelloni@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wanbinkimoon/rice/issues"
   },
+  "keywords": [
+    "module",
+    "frontend",
+    "sass",
+    "atomic",
+    "package",
+    "design",
+    "lightweight",
+    "ux",
+    "ui",
+    "css",
+    "stylesheet",
+    "design",
+    "html",
+    "js",
+    "modular",
+    "ready",
+    "go",
+    "lol"
+  ],
   "homepage": "https://github.com/wanbinkimoon/rice#readme",
   "devDependencies": {
+    "browser-sync": "^2.16.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-sass": "^2.3.2",
-    "http-server": "^0.9.0"
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2"
   }
 }

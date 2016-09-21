@@ -1,0 +1,67 @@
+// __________________________________________________________________________________________
+// GLOBAL
+// set up the global font size on which will be caluculated all the ems
+$lutero_font_size: 14px
+// import and define lutero font face
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,700'
+$lutero_font: 'Roboto', sans-serif
+
+// set the global text alignement
+$lutero_text_align: center
+
+// set global colors
+$lutero_base_color: #ededed
+$lutero_accent_color: #4993FA
+
+// __________________________________________________________________________________________
+// WRAP
+// set wrap width and max width
+$wrap_width: 960px
+$wrap_max_width: 85vw
+
+// set up the component padding top-bottom and left-right
+$wrap_ptb: 2.5em
+$wrap_plr: 1em
+
+// set up the component margin top-bottom and left-right
+$wrap_mtb: 1em
+$wrap_mlr: auto
+
+// set up the wrap bg
+$wrap_bg: false
+
+// set wrap shadow chosing:
+// + false
+// + diffuse for a spread double shadow
+// + regular for a demifocused demi spread shadow
+// + concentrate for a focused shadow
+$wrap_shadow: regular
+$wrap_shadow_color: rgba(#cecece, .75)
+
+// define the border radius
+$wrap_border_radius: 10px
+
+// set up wrap border as a boolean and define it
+$wrap_border: false
+$wrap_border_width: 5px
+$wrap_border_color: #f1c466
+
+// define the behaviour of the internal components
+.lutero__space
+  max-width: 75%
+  @media all and (max-width: 800px)
+    max-width: 85%
+// __________________________________________________________________________________________
+// HEADING
+$h_font_size: 2em
+
+// __________________________________________________________________________________________
+// PARAGRAPH
+$p_font_size: 1em
+
+// __________________________________________________________________________________________
+// BUTTON
+$btn_ptb: 0.5em
+$btn_plr: 1em
+$btn_mtb: 1em
+$btn_mlr: auto
