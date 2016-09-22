@@ -1,5 +1,5 @@
 # Rice
-Rice is a library of web components.
+Rice is a library of web components.   
 ![rice dependencies testing](https://david-dm.org/wanbinkimoon/rice.svg)
 ## Structure
 Rice is organized in three main **rice fields**:

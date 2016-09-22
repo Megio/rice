@@ -1,0 +1,160 @@
+.napoleone__wrap
+    position: relative
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: center
+    box-sizing: border-box
+    width: 100%
+
+    // set the font for the component
+    @if $napoleone_font == false
+      font-family: sans-serif
+    @else
+      font-family: sans-serif
+      font-family: $napoleone_font
+
+    // global text alignement
+    text-align: $napoleone_text_align
+    // is used as reference for all the internal proportions
+    font-size: $napoleone_font_size
+
+    padding: $wrap_ptb $wrap_plr
+    margin: $wrap_mtb $wrap_mlr
+
+    // set the background of the wrap
+    @if $wrap_bg == false
+      background-color: $napoleone_base_color
+    @else
+      background-color: $napoleone_base_color
+      background: $wrap_bg
+
+    // set the shadow of the wrap
+    @if $wrap_shadow == diffuse
+      box-shadow: 0 0.5em 2em -1em $wrap_shadow_color, 0 1.5em 3em -1em $wrap_shadow_color
+    @else if $wrap_shadow == regular
+      box-shadow: 0 0.5em 1.5em -0.75em $wrap_shadow_color, 0 1em 1.5em -0.5em $wrap_shadow_color
+    @else if $wrap_shadow == concentrate
+      box-shadow: 0 0.125em 0.5em -0.25em $wrap_shadow_color, 0 0.5em 0.75em -0.25em $wrap_shadow_color
+
+    // set the wrap border
+    border-radius: $wrap_border_radius
+    @if $wrap_border == false
+      border: none
+    @else
+      border: $wrap_border_width solid $wrap_border_color
+
+.napoleone__lead
+  display: block
+  width: calc(100% - #{$wrap_ptb})
+  clear: both
+  margin: 0.5em auto 1em
+  white-space: normal
+  font-size: $h_font_size
+  line-height: 1.2
+
+.napoleone__card--wrap
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-start
+  width: 1380px
+  @media all and (max-width: 1350px)
+    width: 920px
+  @media all and (max-width: 960px)
+    width: 750px
+  @media all and (max-width: 800px)
+    width: 630px
+  @media all and (max-width: 680px)
+    width: 470px
+  @media all and (max-width: 480px)
+    width: 280px
+    justify-content: center
+
+.napoleone__card
+  display: inline-flex
+  width: 450px
+  height: 200px
+  margin: 5px
+  text-align: left
+
+  // set the shadow of the card
+  @if $card_shadow == diffuse
+    box-shadow: 0 0.5em 2em -1em $card_shadow_color, 0 1.5em 3em -1em $card_shadow_color
+  @else if $card_shadow == regular
+    box-shadow: 0 0.5em 1.5em -0.75em $card_shadow_color, 0 1em 1.5em -0.5em $card_shadow_color
+  @else if $card_shadow == concentrate
+    box-shadow: 0 0.125em 0.5em -0.25em $card_shadow_color, 0 0.5em 0.75em -0.25em $card_shadow_color
+
+  // at 960px the card goes vertical for a bit
+  @media all and (max-width: 960px)
+    flex-direction: column
+    width: 225px
+    height: 450px
+  @media all and (max-width: 800px)
+    flex-direction: column
+    width: 200px
+    height: 450px
+  @media all and (max-width: 680px)
+    flex-direction: row
+    width: 450px
+    height: 200px
+  @media all and (max-width: 480px)
+    flex-direction: column
+    width: 250px
+    height: 450px
+
+  // set up the background as plain color or custom gradient image
+  @if $card_bg == false
+    background-color: $card_bg_color
+  @else
+    background-color: $card_bg_color
+    background: $card_bg
+
+.napoleone__card--img
+  display: inline-block
+  height: 200px
+  // keep the image squared as the card size change
+  @media all and (max-width: 960px)
+    height: 225px
+  @media all and (max-width: 800px)
+    height: 200px
+  @media all and (max-width: 480px)
+    height: 250px
+
+.napoleone__card--det
+  display: inline-flex
+  flex-direction: column
+  height: 100%
+  box-sizing: border-box
+  position: relative
+  padding: 1em
+
+.napoleone__card--lead
+  font-size: $h2_font_size
+  line-height: 1.2
+  margin: 0.5em 0
+
+.napoleone__card--p
+  font-size: $p_font_size
+  line-height: $p_line_height
+  margin: $p_mtb $p_mlr
+
+.napoleone__card--btn
+  display: block
+  position: absolute
+  bottom: 1em
+  @if $btn_position == right
+    right: 1em
+  @else if $btn_position == left
+    left: 1em
+
+  // border: none
+
+  // set paddinf and margin for the element cta
+  padding: $btn_ptb $btn_plr
+
+  // set the font size for the cta
+  font-size: $btn_font_size
+
+  // background color is inherited by the global accent color
+  background-color: $napoleone_accent_color
